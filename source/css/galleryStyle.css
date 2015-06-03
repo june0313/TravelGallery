@@ -1,0 +1,134 @@
+div.gallery hr
+{
+	margin:5px 0;
+	border:0;
+	height:1px;
+	width:185px;
+	background-color:#cccccc;
+}
+
+/* 갤러리 리스트 테이블 스타일 */
+table.gallery
+{
+	width:100%;
+	border-collapse:collapse;
+}
+
+table.gallery tr.heading td
+{
+	height:40px;
+	font-size:12pt;
+	padding-left:10px;
+	background-color:#6dabc6;
+	color:white;
+}
+
+table.gallery tr.title td
+{
+	color:black;
+	background-color:#e5e4e2;
+	font-size:12pt;
+	height:40px;
+	padding-left:10px;
+}
+
+table.gallery tr.best td
+{
+	padding:5px;
+}
+
+table.gallery tr.best td.content
+{
+	text-align:left;
+	vertical-align:top;
+}
+
+table.gallery p.title
+{
+	color:#6dabc6;
+	font-weight:bold;
+	margin:5px 0;
+}
+
+table.gallery tr.list td
+{
+	padding:10px 5px;
+}
+
+table.gallery img
+{
+	width:185px;	
+}
+
+table.gallery img:hover
+{
+	opacity:0.5;
+}
+
+table.gallery tr.no_image td
+{
+	height:50px;
+	vertical-align:middle;
+}
+
+
+
+
+/* 게시판 글 보기(board_show) 테이블 스타일 */
+table.gallery_show 
+{
+	width:100%;
+	border-collapse:collapse;
+}
+
+table.gallery_show img
+{
+	width:570px;
+}
+
+table.gallery_show tr.heading td
+{
+	height:40px;
+	font-size:12pt;
+	padding-left:10px;
+	background-color:#6dabc6;
+	color:white;
+}
+
+table.gallery_show tr.title
+{
+	color:black;
+	background-color:#e5e4e2;
+	font-size:12pt;
+	height:40px;
+}
+
+table.gallery_show td, table.gallery_show th
+{
+	height:30px;
+}
+
+table.gallery_show th
+{
+	color:white;
+	background-color:#93b690;
+	width:100px;
+	border-bottom:1px solid white;
+}
+
+table.gallery_show td
+{
+	padding-left: 10px;
+	border-bottom:1px solid silver;
+}
+
+table.gallery_show tr.content
+{
+	min-height:200px;
+}
+
+table.gallery_show tr.content td
+{
+	padding:10px;
+	vertical-align:top;
+}

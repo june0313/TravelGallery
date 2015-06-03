@@ -1,0 +1,159 @@
+drop DATABASE gallerydb;
+
+CREATE DATABASE gallerydb;
+
+use gallerydb;
+
+CREATE TABLE `customer` (
+
+  `num` int(11) NOT NULL AUTO_INCREMENT,
+
+  `id` varchar(20) DEFAULT NULL,
+
+  `pwd` varchar(20) DEFAULT NULL,
+
+  `name` varchar(20) DEFAULT NULL,
+
+  PRIMARY KEY (`num`),
+
+  UNIQUE KEY `id` (`id`)
+
+);
+
+CREATE TABLE `gallery` (
+
+  `num` int(11) NOT NULL AUTO_INCREMENT,
+
+  `gallery_num` int(11) DEFAULT NULL,
+
+  `title` varchar(30) DEFAULT NULL,
+
+  `id` varchar(20) DEFAULT NULL,
+
+  `recommand` int(11) DEFAULT NULL,
+
+  `hits` int(11) DEFAULT NULL,
+
+  `date` int(10) DEFAULT NULL,
+  
+  `map` varchar(10) DEFAULT NULL,
+
+  `image` varchar(255) DEFAULT NULL,
+
+  `content` text,
+
+  PRIMARY KEY (`num`),
+
+  KEY `id` (`id`)
+
+);
+
+CREATE TABLE `board` (
+  `num` int(11) NOT NULL AUTO_INCREMENT,
+
+  `board_num` int(11) DEFAULT NULL,
+
+  `id` varchar(20) DEFAULT NULL,
+
+  `recommand` int(11) DEFAULT '0',
+
+  `hits` int(11) DEFAULT '0',
+
+  `date` int(11) DEFAULT NULL,
+
+  `map` varchar(10) DEFAULT NULL,
+
+  `title` varchar(60) DEFAULT NULL,
+
+  `content` text,
+
+  PRIMARY KEY (`num`),
+
+  KEY `id` (`id`)
+);
+
+CREATE TABLE `refer` (
+
+  `map` varchar(10) NOT NULL DEFAULT '',
+
+  `gallery_num` int(11) DEFAULT NULL,
+
+  `board_num` int(11) DEFAULT NULL,
+
+  PRIMARY KEY (`map`)
+
+);
+
+CREATE TABLE `recommand`(
+
+  `recommand_num` int(11) AUTO_INCREMENT,
+
+  `id` varchar(20) NOT NULL,
+
+  `num` int(11) NOT NULL,
+
+   PRIMARY KEY (`recommand_num`)
+);
+
+INSERT INTO refer
+VALUES ('seoul',0,0);
+
+INSERT INTO refer
+VALUES ('gyeonggi',0,0);
+
+INSERT INTO refer
+VALUES ('incheon',0,0);
+
+INSERT INTO refer
+VALUES ('chungnam',0,0);
+
+INSERT INTO refer
+VALUES ('chyngbuk',0,0);
+
+INSERT INTO refer
+VALUES ('daejeon',0,0);
+
+INSERT INTO refer
+VALUES ('jeaonbuk',0,0);
+
+INSERT INTO refer
+VALUES ('gwanju',0,0);
+
+INSERT INTO refer
+VALUES ('jeonnam',0,0);
+
+INSERT INTO refer
+VALUES ('jeju',0,0);
+
+INSERT INTO refer
+VALUES ('gangwon',0,0);
+
+INSERT INTO refer
+VALUES ('gyeongbuk',0,0);
+
+INSERT INTO refer
+VALUES ('daegu',0,0);
+
+INSERT INTO refer
+VALUES ('gyeongnam',0,0);
+
+INSERT INTO refer
+VALUES ('ulsan',0,0);
+
+INSERT INTO refer
+VALUES ('busan',0,0);
+
+INSERT INTO refer
+VALUES ('ulleung',0,0);
+
+INSERT INTO refer
+VALUES ('dokdo',0,0);
+
+INSERT INTO customer(id,pwd,name)
+VALUES ('k20sus','9060','±èÈñÁØ');
+
+INSERT INTO customer(id,pwd,name)
+VALUES ('june0313','1234','¹Ú¿µÁØ');
+
+INSERT INTO customer(id,pwd,name)
+VALUES ('admin','','¿î¿µÁø');

@@ -1,0 +1,528 @@
+
+head
+{
+	margin:0;
+	padding:0;
+}
+body
+{
+	font-family:"Malgun Gothic";
+	font-size:12px;
+	color:gray;
+	background-color:#ebebeb ;
+	/*padding:20px;*/
+	margin:0;
+	padding:0;
+}
+
+h3
+{
+	margin:0;
+	color:white;
+}
+
+.color_h1
+{
+	color:#0081ff;
+}
+
+input[type="button"], input[type="submit"], input[type="reset"]
+{
+	border:0;
+	width:90px;
+	height:30px;
+	margin:10px;
+	background-color:#db453e;
+	color:white;
+	font-family:"Malgun Gothic";
+}
+
+
+
+/******************************************** container */
+div.container
+{
+	width:1070px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+	background-color:white;
+	/*border:#b7b6b4 solid 1px;*/
+}
+
+
+/*********************************************** header */
+div.header
+{
+	float:left;
+	height:140px;
+	width:800px;
+	background-color:#6dabc6;
+	padding:15px;
+	margin:0;
+	/*background-image:url('title.jpg');*/
+}
+
+div.header h1
+{
+	font-size:32px;
+	color:white;
+	margin-left:10px;
+	width:350px;
+}
+
+div.header h2
+{
+	margin-left:10px;
+	color:white;
+}
+
+.header a
+{
+	color:white;
+	text-decoration:none;
+}
+
+div.header_login
+{	
+	float:left;
+	color:white;
+	background-color:#f2f1f0;
+	width:240px;
+	height:170px;
+}
+
+div.header_login input[type="text"], div.header_login input[type="password"]
+{
+	width:200px;
+	height:25px;
+	margin:5px;
+	padding:0 5px;
+	font-family:"Malgun Gothic";
+	border:silver solid 1px;
+}
+
+div.header_login input[type="button"], div.header_login input[type="submit"]
+{
+	border:0;
+	width:90px;
+	height:30px;
+	margin:10px;
+	background-color:#db453e;;
+	color:white;
+	font-family:"Malgun Gothic";
+}
+
+table.header_login
+{
+	width:100%;
+	border-collapse:collapse;
+	
+}
+
+table.header_login th
+{
+	text-align:left;
+	font-size:12pt;
+	padding:6px 15px;
+	color:#6dabc6;
+}
+
+table.header_login td
+{
+	text-align:center;
+}
+
+table.welcome
+{
+	width:100%;
+	border-collapse:collapse;
+}
+
+table.welcome th
+{
+	font-size:13pt;
+	height:80px;
+	color:#6dabc6
+}
+table.welcome td
+{
+	text-align:center;
+}
+
+
+div.loginon
+{
+	float:right;
+	height:25px;
+	color:white;
+	background-color:#8acc84;
+	padding:5px 10px;
+	margin-top:25px;
+}
+
+
+
+/****************************************** navigation */
+div.navigation
+{
+	clear:both;
+	height:40px;
+	width:1070px;
+	background-color:#403c38;
+}
+
+div.navigation ul
+{
+	list-style-type:none;
+	overflow:hidden;
+	margin:0;
+	padding:0;
+}
+
+div.navigation ul li
+{
+	float:left;
+	position:relative;
+	display:inline;	
+	font-size:17px;
+}
+
+div.navigation ul li a, .navigation ul li a:visited
+{
+	color:#FFFFFF;
+	background-color:#403c38;
+	display:block;
+	text-align:center;
+	padding:8.5px 0;
+	width:100px;
+	text-decoration:none;
+}
+
+div.navigation ul li a:hover, .navigation ul li a:active
+{
+	background-color:#4c5b62 ;
+}
+
+/* 하위메뉴는 기본적으로 보이지 않도록 한다*/
+div.navigation ul li ul
+{
+	display: none;
+}
+
+/************************************ dropdown menu */
+
+/* 메뉴에 마우스를 올리면 하위메뉴를 보여준다*/
+div.navigation ul li:hover ul
+{
+	display:block;
+}
+
+/* float 속성을 클리어 시켜서 하위 메뉴가 수직으로 나타나도록 한다 */
+div.navigation ul li:hover ul li
+{
+	clear:both;
+}
+
+div.navigation ul li:hover ul li a 
+{
+	color:#FFFFFF;
+	background-color:#403c38;
+	display:block;
+	text-align:center;
+	padding:5px 0;
+	width:150px;
+	text-decoration:none;
+}
+
+div.navigation ul li:hover ul li a:hover
+{
+	background-color:#4c5b62;
+}
+
+
+
+/****************************************** left column div */
+div.left
+{
+	float:left;
+	width:210px;
+	min-height:560px;
+	padding:10px;
+	margin: 10px 10px 0 0;
+	background-color:white;
+}
+
+div.left h2
+{
+	margin:25px 0 0 0;
+	color:#243446;
+}
+
+div.left hr
+{
+	margin:5px 0;
+	border:0;
+	height:1px;
+	background-color:#cccccc;
+}
+
+div.left ul
+{
+	list-style-type:none;
+	overflow:hidden;
+	margin:0;
+	padding:0;
+}
+
+div.left a:link, div.left a:visited
+{
+	display:block;
+	width:190px;
+	padding:10px 10px;
+	margin:1px 0;
+	color:black;
+	background-color:#f2f1f0;
+	border-style:silver solid;
+	text-decoration:none;
+	text-align:center;
+}
+
+div.left a:hover, div.left a:active
+{
+	background-color:#d9d8d8;
+	color:white;
+}
+
+/***************************************** center column div */
+div.center
+{
+	float:left;
+	width:590px;
+	min-height:580px;
+	background-color:white;
+	padding:0;
+	margin:10px 0;
+
+}
+
+div.center hr
+{
+	margin:25px 0;
+	border:0;
+	height:2px;
+	background-color:#6dabc6;
+}
+
+/* 회원가입 페이지 테이블 스타일 */
+table.join
+{
+	border-collapse:collapse;
+	width:100%;
+	
+}
+
+table.join td
+{
+	padding:5px 20px;
+}
+
+table.join tr
+{
+	border-bottom:1px solid silver;
+	height:40px;
+}
+
+[type=text], [type=password]
+{
+	width:150px;
+}
+
+table.join td.h
+{
+	background-color:#e3e3e3;
+	width:100px;
+}
+
+/* 로그인 페이지 테이블 스타일 */
+div.login a
+{
+	text-decoration:none;
+	color:gray;
+}
+
+div.login a:hover
+{
+	color:#357A14;
+}
+
+table.login
+{
+	border-collapse:collapse;
+	width:300px;
+}
+
+table.login td
+{
+	padding:5px 20px;
+}
+
+table.login tr
+{
+	border-bottom:1px solid silver;
+	height:40px;
+}
+
+table.login td.h
+{
+	background-color:#e3e3e3;
+}
+
+/***************************************** right column div */
+div.right
+{
+	float:left;
+	width:210px;
+	min-height:560px;
+	padding:10px;
+	margin:10px 0 0 10px;
+	background-color:white;
+}
+
+div.right h2
+{
+	margin:25px 0 0 0;
+	color:#243446;
+}
+
+div.right hr
+{
+	margin:5px 0;
+	border:0;
+	height:1px;
+	background-color:#cccccc;
+}
+
+div.right ul
+{
+	list-style-type:none;
+	overflow:hidden;
+	margin:0;
+	padding:0;
+}
+
+div.right li
+{
+}
+
+div.right a:link, div.right a:visited
+{
+	display:block;
+	width:190px;
+	padding:10px 10px;
+	margin:1px 0;
+	color:black;
+	background-color:#f2f1f0;
+	border-style:silver solid;
+	text-decoration:none;
+	text-align:center;
+}
+
+div.right a:hover, div.right a:active
+{
+	background-color:#d9d8d8;
+	color:white;
+}
+/************************************************ footer */
+div.footer
+{
+	clear:both;
+	text-align:center;
+	color:gray;
+	border-top:solid silver 1px;
+}
+
+.footer p
+{
+	padding:50px 0;
+	margin:0;
+	text-align:center;
+}
+
+a.tryitbtn,a.tryitbtn:link,a.tryitbtn:visited,a.showbtn,a.showbtn:link,a.showbtn:visited
+{
+	display:inline-block;
+	color:#FFFFFF;
+	background-color:#1E90FF;
+	font-weight:bold;
+	font-size:12px;
+	text-align:center;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:3px;
+	padding-bottom:4px;
+	text-decoration:none;
+	margin-left:5px;
+	margin-top:0px;
+	margin-bottom:5px;
+	border:1px solid #aaaaaa;
+	border-radius:5px;
+	white-space:nowrap;
+	position:absolute;
+}
+
+a.tryitbtn:hover,a.tryitbtn:active,a.showbtn:hover,a.showbtn:active
+{
+	background-color:#ffffff;
+	color:#1E90FF;
+}
+
+div.newhot hr
+{
+	margin:5px 0;
+	border:0;
+	height:1px;
+	width:100%;
+	background-color:#cccccc;
+}
+
+div.newhot a:link, div.newhot a:visited
+{
+	display:inline;
+	padding:0;
+	margin:0;
+}
+
+div.newhot a:hover, div.newhot a:active
+{
+	background-color:white;
+}
+
+/* 갤러리 리스트 테이블 스타일 */
+table.newhot
+{
+	width:100%;
+	border-spacing:5px;
+}
+
+table.newhot td
+{
+	border:silver solid 1px;
+	padding:7px;
+	text-align:left;
+	vertical-align:top;
+}
+
+table.newhot img
+{
+	margin:0;
+	padding:0;
+	width:184px;	
+}
+
+table.newhot p.title
+{
+	color:#6dabc6;
+	font-weight:bold;
+	margin:5px 0;
+}

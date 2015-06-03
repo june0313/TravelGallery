@@ -1,0 +1,206 @@
+/* 게시판 div 스타일 */
+div.board
+{	
+	width:590px;
+	padding:0;
+}
+
+/* 게시판 리스트 테이블 스타일 */
+table.board
+{
+	width:100%;
+	border-collapse:collapse;
+	
+}
+
+table.board tr.heading td
+{
+	height:40px;
+	font-size:12pt;
+	padding-left:10px;
+	background-color:#6dabc6;
+	color:white;
+}
+
+table.board td
+{
+	height:60px;
+	color:gray;
+	text-align:left;
+	padding:0 10px;
+}
+
+table.board td.board_num
+{
+	width:20px;
+	text-align:center;
+}
+
+table.board td p.title
+{
+	text-align:left;
+	
+	margin:5px 0;
+}
+
+table.board td a
+{
+	color:#6dabc6;
+	font-size:12pt;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+table.board td a:hover
+{
+	color:#db453e;
+}
+
+table.board th
+{
+	color:white;
+	background-color:#93b690;
+}
+
+table.board tr
+{
+	border-bottom:1px solid silver;
+}
+
+/* 게시판 글쓰기 테이블 스타일*/
+table.board_write
+{
+	width:100%;
+	border-collapse:collapse;
+}
+
+table.board_write tr.title
+{
+	border-bottom:1px solid silver;
+}
+
+table.board_write td
+{
+	padding:15px 0;
+}
+
+table.board_write textarea
+{
+	width:530px;
+	height:250px;
+}
+
+/* 페이지리스트 스타일*/
+div.page_list
+{
+	text-align:center;
+}
+
+/* 게시판 링크와 페이지 리스트 링크 스타일 */
+div.board a, div.page_list a
+{
+	color:black;
+	text-decoration:none; 
+}
+
+div.board a:hover, div.page_list a:hover
+{ 
+	color:#357A14;
+}
+
+/* 게시판 글 보기(board_show) 테이블 스타일 */
+table.board_show 
+{
+	width:100%;
+	border-collapse:collapse;
+}
+
+table.board_show tr.heading td
+{
+	height:40px;
+	font-size:12pt;
+	padding-left:10px;
+	background-color:#6dabc6;
+	color:white;
+}
+
+table.board_show tr.title
+{
+	color:black;
+	background-color:#e5e4e2;
+	font-size:12pt;
+	height:40px;
+}
+
+table.board_show tr.content td
+{
+	padding:10px;
+	vertical-align:top;
+	height:200px;
+}
+
+table.board_show td, table.board_show th
+{
+	height:30px;
+}
+
+table.board_show th
+{
+	color:white;
+	background-color:#93b690;
+	width:100px;
+	border-bottom:1px solid white;
+}
+
+table.board_show td
+{
+	padding-left: 10px;
+	border-bottom:1px solid silver;
+}
+
+
+
+/* 게시판 버튼 스타일*/
+
+div.board_buttons
+{
+	text-align:right;
+}
+
+div.board_buttons input[type="submit"]
+{
+	border:0;
+	width:80px;
+	height:25px;
+	margin:5px;
+	background-color:#db453e;
+	color:white;
+	font-family:"Malgun Gothic";
+}
+
+div.board_buttons ul
+{
+	list-style-type:none;
+	overflow:hidden;
+	margin:0;
+	padding:0;
+}
+
+div.board_buttons ul li
+{
+	float:right;
+	position:relative;
+	display:inline;	
+}
+
+div.board_buttons a:link, div.board_buttons a:visited
+{
+	color:#FFFFFF;
+	background-color:#db453e;
+	display:block;
+	text-align:center;
+	padding:5px 0;
+	margin:5px;
+	width:80px;
+	text-decoration:none;
+}
